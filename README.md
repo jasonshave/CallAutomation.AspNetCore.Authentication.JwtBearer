@@ -29,7 +29,7 @@ As an example, you can configure your `secrets.json` file for local development 
 }
 ```
 
-> NOTE: If you want to test your configuration with an expired token, you can force the token validation lifetime check by setting `ValidateLifetime` to `false` in your configuration as shown in the previous example.
+> NOTE: If you want to test your configuration with an expired token, change the token validation lifetime check by setting `ValidateLifetime` to `false` in your configuration as shown in the previous example.
 
 ## Example Program.cs Setup
 

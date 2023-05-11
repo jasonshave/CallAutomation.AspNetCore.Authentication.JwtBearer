@@ -48,7 +48,7 @@ app.MapGet("/{name}", (string name) => $"Hello {name}!")
 
 You have the option of using your own policy name on both the `AddAcsWebHookAuthentication` and `RequireAcsWebHookAuthorization` methods.
 
-## JWT Token Validation Behavior
+## Token Validation
 
 This library will perform JWT bearer token validation on endpoints matching the policy you specify or using the default policy in this library. On protected endpoints the authentication middleware in ASP.NET will trigger the retrieval of the JWKS signing keys and issuer value from the `OpenIdConfigurationUrl` which has already been set to the correct default value for Call Automation.
 

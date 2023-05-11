@@ -24,8 +24,7 @@ public static class ServiceCollectionExtensions
                 jwtBearerOptions.Configuration = openIdConnectConfiguration;
                 jwtBearerOptions.TokenValidationParameters = new TokenValidationParameters
                 {
-                    ValidAudience = acsOpenIdConfiguration.ValidAudience,
-                    ValidateLifetime = acsOpenIdConfiguration.ValidateLifetime
+                    ValidAudience = acsOpenIdConfiguration.ValidAudience
                 };
             });
 

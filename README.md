@@ -1,5 +1,9 @@
 # CallAutomation.AspNetCore.Authentication.JwtBearer
 
+[![.NET](https://github.com/jasonshave/CallAutomation.AspNetCore.Authentication.JwtBearer/actions/workflows/dotnet.yml/badge.svg)](https://github.com/jasonshave/CallAutomation.AspNetCore.Authentication.JwtBearer/actions/workflows/dotnet.yml)
+[![Nuget](https://github.com/jasonshave/CallAutomation.AspNetCore.Authentication.JwtBearer/actions/workflows/nuget.yml/badge.svg)](https://github.com/jasonshave/CallAutomation.AspNetCore.Authentication.JwtBearer/actions/workflows/nuget.yml)
+[![Nuget](https://img.shields.io/nuget/v/CallAutomation.AspNetCore.Authentication.JwtBearer.svg?style=flat)](https://www.nuget.org/packages/CallAutomation.AspNetCore.Authentication.JwtBearer/)
+
 This project contains several extension methods used with an ASP.NET web application to protect and validate public web endpoints.
 
 ## Protecting Webhook Endpoints

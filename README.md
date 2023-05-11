@@ -24,7 +24,7 @@ As an example, you can configure your `secrets.json` file for local development 
 }
 ```
 
-## Program.cs configuration
+## Program.cs Example
 
 ```csharp
 

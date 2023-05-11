@@ -23,17 +23,21 @@ As an example, you can configure your `secrets.json` file for local development 
 ```json
 {
   "AcsJwtBearerOptions": {
-    "ValidAudience": "abc8b7b5-6666-4e99-a66f-r90c600e6cb9"
+    "ValidAudience": "abc8b7b5-6666-4e99-a66f-r90c600e6cb9",
+    "ValidateLifetime": true //<-- optional (defaults to true)
   }
 }
 ```
 
-## Example setup
+> NOTE: If you want to test your configuration with an expired token, change the token validation lifetime check by setting `ValidateLifetime` to `false` in your configuration as shown in the previous example.
+
+## Example Program.cs Setup
 
 ```csharp
 
-// use the extension method to add the authentication scheme and policy and bind to the configuration section name automatically.
-builder.Services.AddAcsWebHookAuthentication(x => builder.Configuration.Bind(AcsOpenIdDefaults.SectionName, x));
+// use the extension method to add the authentication scheme and policy and bind the configuration section name automatically.
+builder.Services.AddAcsWebHookAuthentication(x => 
+    builder.Configuration.Bind(AcsOpenIdDefaults.SectionName, x));
 
 
 // protect an HTTP endpoint by adding the extension method as follows
@@ -44,7 +48,7 @@ app.MapGet("/{name}", (string name) => $"Hello {name}!")
 
 You have the option of using your own policy name on both the `AddAcsWebHookAuthentication` and `RequireAcsWebHookAuthorization` methods.
 
-## Validation behavior
+## Token Validation
 
 This library will perform JWT bearer token validation on endpoints matching the policy you specify or using the default policy in this library. On protected endpoints the authentication middleware in ASP.NET will trigger the retrieval of the JWKS signing keys and issuer value from the `OpenIdConfigurationUrl` which has already been set to the correct default value for Call Automation.
 

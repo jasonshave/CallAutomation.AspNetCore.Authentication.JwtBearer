@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>CallAutomation.AspNetCore.Authentication.JwtBearer</id>
+    <authors>Jason Shave</authors>
+    <owners>Jason Shave</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <icon>icon.jpg</icon>
+    <projectUrl>https://github.com/jasonshave/CallAutomation.AspNetCore.Authentication.JwtBearer</projectUrl>
+    <readme>README.md</readme>
+    <description>A simple library used with Azure Communication Services Call Automation to help with authentication of webhook callback requests.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <version>1.0.0</version>
+    <tags>Azure-Communication-Services JasonShave ACS CallAutomation Call Automation</tags>
+  </metadata>
+  <files>
+    <file src="..\images\icon.jpg" target=""/>
+    <file src="..\README.md" target=""/>
+  </files>
+</package>

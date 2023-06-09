@@ -31,7 +31,7 @@ jobs:
       id: version
       uses: battila7/get-version-action@v2
 
-    - name: Package CallAutomation.Contracts Project
+    - name: Package Project
       run: nuget pack src/ -Prop Configuration=Release -Version ${{ steps.version.outputs.version-without-v }} -IncludeReferencedProjects -OutputDirectory ${{ env.PACKAGE_OUTPUT }}
 
     - name: Publish Packages

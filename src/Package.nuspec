@@ -13,7 +13,9 @@
     <releaseNotes>First release.</releaseNotes>
     <copyright>Copyright 2023</copyright>
     <version>1.0.0</version>
-    <tags>Azure-Communication-Services JasonShave ACS CallAutomation Call Automation</tags>
+	  <dependencies>
+		  <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="7.0.5"/>
+	  </dependencies>
   </metadata>
   <files>
     <file src="..\images\icon.jpg" target=""/>
